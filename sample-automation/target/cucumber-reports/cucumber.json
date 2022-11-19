@@ -1,0 +1,122 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Lathusha"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Search function",
+        "description": "",
+        "id": "verify-search-option;search-function",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 46947181600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I want to verify search option",
+            "match": {
+              "location": "SearchProcess.User_Login_Again()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "verify search option",
+    "description": "I want to verify search option",
+    "id": "verify-search-option",
+    "keyword": "Feature",
+    "uri": "Web01.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "navigate to the woman top",
+        "description": "",
+        "id": "women-top;navigate-to-the-woman-top",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40073609100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User filter product",
+            "match": {
+              "location": "MyorderProcess.Given_User_filter_product()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@filter"
+          }
+        ]
+      }
+    ],
+    "name": "Women top",
+    "description": "",
+    "id": "women-top",
+    "keyword": "Feature",
+    "uri": "Web02.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Things add to cart",
+        "description": "",
+        "id": "add-to-cart;things-add-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37033123600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add things to cart",
+            "match": {
+              "location": "AddToCartProcess.click_on__button()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Addtocart"
+          }
+        ]
+      }
+    ],
+    "name": "Add to Cart",
+    "description": "",
+    "id": "add-to-cart",
+    "keyword": "Feature",
+    "uri": "Web03.feature"
+  }
+]

@@ -1,0 +1,469 @@
+-- MySQL dump 10.13  Distrib 8.0.24, for Win64 (x86_64)
+--
+-- Host: localhost    Database: alpha_pos
+-- ------------------------------------------------------
+-- Server version	5.7.34-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `bank`
+--
+
+LOCK TABLES `bank` WRITE;
+/*!40000 ALTER TABLE `bank` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bank` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `barcode`
+--
+
+LOCK TABLES `barcode` WRITE;
+/*!40000 ALTER TABLE `barcode` DISABLE KEYS */;
+/*!40000 ALTER TABLE `barcode` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `brand`
+--
+
+LOCK TABLES `brand` WRITE;
+/*!40000 ALTER TABLE `brand` DISABLE KEYS */;
+/*!40000 ALTER TABLE `brand` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `brand_country`
+--
+
+LOCK TABLES `brand_country` WRITE;
+/*!40000 ALTER TABLE `brand_country` DISABLE KEYS */;
+/*!40000 ALTER TABLE `brand_country` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `bundle`
+--
+
+LOCK TABLES `bundle` WRITE;
+/*!40000 ALTER TABLE `bundle` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bundle` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `category`
+--
+
+LOCK TABLES `category` WRITE;
+/*!40000 ALTER TABLE `category` DISABLE KEYS */;
+INSERT INTO `category` VALUES (1,'Beverages','Beverages',1);
+/*!40000 ALTER TABLE `category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `cheque_expiration`
+--
+
+LOCK TABLES `cheque_expiration` WRITE;
+/*!40000 ALTER TABLE `cheque_expiration` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cheque_expiration` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `client`
+--
+
+LOCK TABLES `client` WRITE;
+/*!40000 ALTER TABLE `client` DISABLE KEYS */;
+INSERT INTO `client` VALUES (1,'Algorial','Pos',1);
+/*!40000 ALTER TABLE `client` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `commission`
+--
+
+LOCK TABLES `commission` WRITE;
+/*!40000 ALTER TABLE `commission` DISABLE KEYS */;
+/*!40000 ALTER TABLE `commission` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `country`
+--
+
+LOCK TABLES `country` WRITE;
+/*!40000 ALTER TABLE `country` DISABLE KEYS */;
+INSERT INTO `country` VALUES (1,'Sri Lanka','LK',1),(2,'United Kingdom','GB',1);
+/*!40000 ALTER TABLE `country` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `country_code`
+--
+
+LOCK TABLES `country_code` WRITE;
+/*!40000 ALTER TABLE `country_code` DISABLE KEYS */;
+/*!40000 ALTER TABLE `country_code` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `currency`
+--
+
+LOCK TABLES `currency` WRITE;
+/*!40000 ALTER TABLE `currency` DISABLE KEYS */;
+/*!40000 ALTER TABLE `currency` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `dashboard_configuration`
+--
+
+LOCK TABLES `dashboard_configuration` WRITE;
+/*!40000 ALTER TABLE `dashboard_configuration` DISABLE KEYS */;
+INSERT INTO `dashboard_configuration` VALUES (1,1,1,1),(2,1,1,2),(3,1,1,4),(4,1,1,5),(6,1,1,6);
+/*!40000 ALTER TABLE `dashboard_configuration` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `due_payment`
+--
+
+LOCK TABLES `due_payment` WRITE;
+/*!40000 ALTER TABLE `due_payment` DISABLE KEYS */;
+/*!40000 ALTER TABLE `due_payment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `feature_master`
+--
+
+LOCK TABLES `feature_master` WRITE;
+/*!40000 ALTER TABLE `feature_master` DISABLE KEYS */;
+INSERT INTO `feature_master` VALUES (1,'SETTING',1),(2,'REPORT',1),(3,'CUSTOMER_MANAGEMENT',1),(4,'SALES',1),(5,'STOCK',1),(6,'SUPPLIER_MANAGEMENT',1),(7,'DASHBOARD_CONFIGURATION',NULL);
+/*!40000 ALTER TABLE `feature_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `invoice`
+--
+
+LOCK TABLES `invoice` WRITE;
+/*!40000 ALTER TABLE `invoice` DISABLE KEYS */;
+INSERT INTO `invoice` VALUES (1,NULL,NULL,NULL,NULL,NULL,NULL,'dsdsd',NULL,NULL,NULL),(2,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(3,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(4,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(5,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(6,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(7,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(8,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(9,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(11,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(15,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1),(16,10.5,'RFC45','2021-05-05',10,5.5,'2021-05-05','invoice details',1,NULL,1);
+/*!40000 ALTER TABLE `invoice` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `logout_details`
+--
+
+LOCK TABLES `logout_details` WRITE;
+/*!40000 ALTER TABLE `logout_details` DISABLE KEYS */;
+/*!40000 ALTER TABLE `logout_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `low_stock_quantity`
+--
+
+LOCK TABLES `low_stock_quantity` WRITE;
+/*!40000 ALTER TABLE `low_stock_quantity` DISABLE KEYS */;
+INSERT INTO `low_stock_quantity` VALUES (1,1,1,NULL);
+/*!40000 ALTER TABLE `low_stock_quantity` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `loyalty`
+--
+
+LOCK TABLES `loyalty` WRITE;
+/*!40000 ALTER TABLE `loyalty` DISABLE KEYS */;
+/*!40000 ALTER TABLE `loyalty` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `measurement_unit`
+--
+
+LOCK TABLES `measurement_unit` WRITE;
+/*!40000 ALTER TABLE `measurement_unit` DISABLE KEYS */;
+/*!40000 ALTER TABLE `measurement_unit` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `payment_transaction`
+--
+
+LOCK TABLES `payment_transaction` WRITE;
+/*!40000 ALTER TABLE `payment_transaction` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payment_transaction` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `payment_type`
+--
+
+LOCK TABLES `payment_type` WRITE;
+/*!40000 ALTER TABLE `payment_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payment_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `post_order_stock`
+--
+
+LOCK TABLES `post_order_stock` WRITE;
+/*!40000 ALTER TABLE `post_order_stock` DISABLE KEYS */;
+/*!40000 ALTER TABLE `post_order_stock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `post_order_stock_master`
+--
+
+LOCK TABLES `post_order_stock_master` WRITE;
+/*!40000 ALTER TABLE `post_order_stock_master` DISABLE KEYS */;
+/*!40000 ALTER TABLE `post_order_stock_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `pre_order_stock`
+--
+
+LOCK TABLES `pre_order_stock` WRITE;
+/*!40000 ALTER TABLE `pre_order_stock` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pre_order_stock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `pre_order_stock_master`
+--
+
+LOCK TABLES `pre_order_stock_master` WRITE;
+/*!40000 ALTER TABLE `pre_order_stock_master` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pre_order_stock_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `privilege`
+--
+
+LOCK TABLES `privilege` WRITE;
+/*!40000 ALTER TABLE `privilege` DISABLE KEYS */;
+INSERT INTO `privilege` VALUES (1,'SETTING','SETTING','DASHBOARD',1),(2,'REPORT','REPORT','DASHBOARD',1),(3,'CUSTOMER_MANAGEMENT','CUSTOMER_MANAGEMENT','DASHBOARD',1),(4,'SALES','SALES','DASHBOARD',1),(5,'STOCK','STOCK','DASHBOARD',1),(6,'SUPPLIER_MANAGEMENT','SUPPLIER_MANAGEMENT','DASHBOARD',1),(7,'INVOICE_MANAGEMENT','INVOICE_MANAGEMENT','DASHBOARD',1),(8,'ROLE_MANAGEMENT','ROLE_MANAGEMENT','DASHBOARD',1),(9,'DASHBOARD_CONFIGURATION','DASHBOARD_CONFIGURATION','DASHBOARD',1);
+/*!40000 ALTER TABLE `privilege` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `product`
+--
+
+LOCK TABLES `product` WRITE;
+/*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,'Cocacola',NULL,NULL,1,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(3,'lux',NULL,'hghgh',NULL,NULL,NULL,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(4,'lux',NULL,'hghgh',NULL,NULL,NULL,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(5,'lux',NULL,'hghgh',NULL,NULL,NULL,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(6,'lux',NULL,'hghgh',NULL,NULL,NULL,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `product_bundle`
+--
+
+LOCK TABLES `product_bundle` WRITE;
+/*!40000 ALTER TABLE `product_bundle` DISABLE KEYS */;
+/*!40000 ALTER TABLE `product_bundle` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `product_supplier`
+--
+
+LOCK TABLES `product_supplier` WRITE;
+/*!40000 ALTER TABLE `product_supplier` DISABLE KEYS */;
+/*!40000 ALTER TABLE `product_supplier` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `promotion`
+--
+
+LOCK TABLES `promotion` WRITE;
+/*!40000 ALTER TABLE `promotion` DISABLE KEYS */;
+/*!40000 ALTER TABLE `promotion` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `role`
+--
+
+LOCK TABLES `role` WRITE;
+/*!40000 ALTER TABLE `role` DISABLE KEYS */;
+INSERT INTO `role` VALUES (1,'Core_Admin','Core Admin',1),(6,'test role','Api Testing',1),(8,'admin ','jaffna',1),(9,'admin ','jaffna',1);
+/*!40000 ALTER TABLE `role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `role_privilege`
+--
+
+LOCK TABLES `role_privilege` WRITE;
+/*!40000 ALTER TABLE `role_privilege` DISABLE KEYS */;
+INSERT INTO `role_privilege` VALUES (1,1,1,'DASHBOARD',0),(2,1,2,'DASHBOARD',0),(3,1,3,'DASHBOARD',1),(4,1,4,'DASHBOARD',1),(5,1,7,'DASHBOARD',0),(6,1,8,'DASHBOARD',1),(7,6,8,'DASHBOARD',1),(8,1,9,'DASHBOARD',1);
+/*!40000 ALTER TABLE `role_privilege` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `stock`
+--
+
+LOCK TABLES `stock` WRITE;
+/*!40000 ALTER TABLE `stock` DISABLE KEYS */;
+INSERT INTO `stock` VALUES (1,2,3,100,1,NULL,NULL,NULL,NULL,1,1,1),(4,10,5,0.2,1,NULL,'anchor','2021-05-05',1,1,3,1),(9,10,5,0.2,1,NULL,'anchor','2021-05-05',1,1,7,1),(10,10,5,0.2,5,NULL,'anchor','2021-05-05',1,1,7,1),(11,10,5,0.2,1,NULL,'anchor','2021-05-05',1,1,8,1),(12,10,5,0.2,6,NULL,'anchor','2021-05-05',1,1,8,1);
+/*!40000 ALTER TABLE `stock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `stock_master`
+--
+
+LOCK TABLES `stock_master` WRITE;
+/*!40000 ALTER TABLE `stock_master` DISABLE KEYS */;
+INSERT INTO `stock_master` VALUES (1,'2021-05-05',1,NULL),(3,'2021-05-05',1,11),(7,'2021-05-05',1,15),(8,'2021-05-05',1,16);
+/*!40000 ALTER TABLE `stock_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `sub_category`
+--
+
+LOCK TABLES `sub_category` WRITE;
+/*!40000 ALTER TABLE `sub_category` DISABLE KEYS */;
+INSERT INTO `sub_category` VALUES (1,'Soft Drink',1,1);
+/*!40000 ALTER TABLE `sub_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `supplier`
+--
+
+LOCK TABLES `supplier` WRITE;
+/*!40000 ALTER TABLE `supplier` DISABLE KEYS */;
+INSERT INTO `supplier` VALUES (1,'ragavan',52552525,'jaffna','jdnsjdn','44444','jsdhsjdjsd@shdghsd.djsgd','sgdhsgd',1,1,'2021-04-10',NULL,NULL),(2,'ragavan',52552525,'jaffna','jdnsjdn','44444','jsdhsjdjsd@shdghsd.djsgd','sgdhsgd',1,1,'2021-04-10',NULL,NULL),(3,'ragavan',52552525,'jaffna','jdnsjdn','44444','jsdhsjdjsd@shdghsd.djsgd','sgdhsgd',1,1,'2021-04-10',NULL,NULL),(4,'ragavan',52552525,'jaffna','jdnsjdn','44444','jsdhsjdjsd@shdghsd.djsgd','sgdhsgd',1,1,'2021-04-10','sup_Z3SAVA','jdhsudu'),(5,'ragavan',52552525,'jaffna','jdnsjdn','44444','jsdhsjdjsd@shdghsd.djsgd','sgdhsgd',1,1,'2021-04-10','sup_N52GKU','jdhsudu'),(6,'ragavan',52552525,'jaffna','jdnsjdn','44444','jsdhsjdjsds@shdghsd.djsgd','sgdhsgd',1,1,'2021-04-10','sup_7G74JK','jdhsudu'),(7,'sasee',52552525,'jaffna','jaffna','44444','saseekalaraj@codelantic.com','sgdhsgd',1,1,'2021-04-10','sup_619UWR','jdhsudu');
+/*!40000 ALTER TABLE `supplier` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tax`
+--
+
+LOCK TABLES `tax` WRITE;
+/*!40000 ALTER TABLE `tax` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tax` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `tax_country`
+--
+
+LOCK TABLES `tax_country` WRITE;
+/*!40000 ALTER TABLE `tax_country` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tax_country` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `token`
+--
+
+LOCK TABLES `token` WRITE;
+/*!40000 ALTER TABLE `token` DISABLE KEYS */;
+INSERT INTO `token` VALUES (1,'173421','RESET_PASSWORD','2021-04-10 23:00:04','2021-04-11 00:00:04','I',1),(2,'130585','RESET_PASSWORD','2021-04-11 12:02:02','2021-04-11 13:02:02','I',1),(3,'133508','RESET_PASSWORD','2021-04-11 12:14:35','2021-04-11 13:14:35','I',1),(4,'116200','RESET_PASSWORD','2021-04-11 12:22:10','2021-04-11 13:22:10','I',1),(5,'108722','RESET_PASSWORD','2021-04-11 12:27:38','2021-04-11 13:27:38','I',1),(6,'157675','RESET_PASSWORD','2021-04-11 12:28:03','2021-04-11 13:28:03','I',1),(7,'174593','RESET_PASSWORD','2021-04-11 12:35:02','2021-04-11 13:35:02','I',1),(8,'181372','RESET_PASSWORD','2021-04-18 15:37:27','2021-04-18 16:37:27','I',1),(9,'188847','RESET_PASSWORD','2021-05-11 16:15:24','2021-05-11 17:15:24','I',1),(10,'146663','RESET_PASSWORD','2021-05-11 17:48:39','2021-05-11 18:48:39','I',1),(11,'108232','RESET_PASSWORD','2021-05-11 18:02:52','2021-05-11 19:02:52','I',1),(12,'130940','RESET_PASSWORD','2021-05-11 18:05:21','2021-05-11 19:05:21','I',1),(13,'108776','RESET_PASSWORD','2021-05-11 18:15:47','2021-05-11 19:15:47','I',1),(14,'154048','RESET_PASSWORD','2021-05-11 18:27:48','2021-05-11 19:27:48','I',1),(15,'122889','RESET_PASSWORD','2021-05-11 18:30:23','2021-05-11 19:30:23','I',1),(16,'107386','RESET_PASSWORD','2021-05-11 18:30:45','2021-05-11 19:30:45','I',1),(17,'145726','RESET_PASSWORD','2021-05-11 18:34:36','2021-05-11 19:34:36','I',1),(18,'117835','RESET_PASSWORD','2021-05-11 18:43:14','2021-05-11 19:43:14','I',1),(19,'163619','RESET_PASSWORD','2021-05-12 10:26:25','2021-05-12 11:26:25','I',1),(20,'150149','RESET_PASSWORD','2021-05-12 10:42:55','2021-05-12 11:42:55','I',1),(21,'121484','RESET_PASSWORD','2021-05-12 11:26:09','2021-05-12 12:26:09','I',1),(22,'147507','RESET_PASSWORD','2021-05-12 11:51:18','2021-05-12 12:51:18','I',1),(23,'187998','RESET_PASSWORD','2021-05-12 11:55:49','2021-05-12 12:55:49','I',1),(24,'123756','RESET_PASSWORD','2021-05-12 12:12:11','2021-05-12 13:12:11','I',1),(25,'100445','RESET_PASSWORD','2021-05-12 12:29:08','2021-05-12 13:29:08','I',1),(26,'103586','RESET_PASSWORD','2021-05-12 12:40:00','2021-05-12 13:40:00','I',1),(27,'145407','RESET_PASSWORD','2021-05-12 13:01:46','2021-05-12 14:01:46','I',1),(28,'198240','RESET_PASSWORD','2021-05-12 13:06:06','2021-05-12 14:06:06','I',1),(29,'110604','RESET_PASSWORD','2021-05-12 13:15:50','2021-05-12 14:15:50','I',1),(30,'106228','RESET_PASSWORD','2021-05-12 13:19:03','2021-05-12 14:19:03','I',1),(31,'151168','RESET_PASSWORD','2021-05-12 13:22:15','2021-05-12 14:22:15','I',1),(32,'160596','RESET_PASSWORD','2021-05-12 15:10:25','2021-05-12 16:10:25','I',1),(33,'167388','RESET_PASSWORD','2021-05-12 15:13:08','2021-05-12 16:13:08','I',1),(34,'130815','RESET_PASSWORD','2021-05-12 16:35:52','2021-05-12 17:35:52','I',1),(35,'108553','RESET_PASSWORD','2021-05-12 16:42:17','2021-05-12 17:42:17','I',1),(36,'158167','RESET_PASSWORD','2021-05-12 16:51:32','2021-05-12 17:51:32','I',1),(37,'198909','RESET_PASSWORD','2021-05-12 17:01:11','2021-05-12 18:01:11','I',1),(38,'127635','RESET_PASSWORD','2021-05-12 17:20:50','2021-05-12 18:20:50','I',1),(39,'152689','RESET_PASSWORD','2021-05-12 17:29:58','2021-05-12 18:29:58','I',1),(40,'152175','RESET_PASSWORD','2021-05-12 17:30:46','2021-05-12 18:30:46','I',1),(41,'175709','RESET_PASSWORD','2021-05-13 10:46:34','2021-05-13 11:46:34','I',1),(42,'141786','RESET_PASSWORD','2021-05-13 10:54:18','2021-05-13 11:54:18','I',1),(43,'192183','RESET_PASSWORD','2021-05-13 10:58:17','2021-05-13 11:58:17','I',1),(44,'105084','RESET_PASSWORD','2021-05-13 11:03:14','2021-05-13 12:03:14','I',1),(45,'117198','RESET_PASSWORD','2021-05-13 11:28:51','2021-05-13 12:28:51','I',1),(46,'138812','RESET_PASSWORD','2021-05-13 12:04:18','2021-05-13 13:04:18','I',1),(47,'163202','RESET_PASSWORD','2021-05-13 14:00:03','2021-05-13 15:00:03','I',1),(48,'138205','RESET_PASSWORD','2021-05-13 16:53:37','2021-05-13 17:53:37','I',1),(49,'154893','RESET_PASSWORD','2021-05-13 17:11:22','2021-05-13 18:11:22','I',1),(50,'128100','RESET_PASSWORD','2021-05-13 17:28:08','2021-05-13 18:28:08','I',1),(51,'125752','RESET_PASSWORD','2021-05-13 17:31:54','2021-05-13 18:31:54','I',1),(52,'143803','RESET_PASSWORD','2021-05-13 17:38:00','2021-05-13 18:38:00','I',1),(53,'120634','RESET_PASSWORD','2021-05-13 17:45:05','2021-05-13 18:45:05','I',1),(54,'170246','RESET_PASSWORD','2021-05-13 17:48:17','2021-05-13 18:48:17','I',1),(55,'166141','RESET_PASSWORD','2021-05-13 17:54:27','2021-05-13 18:54:27','I',1),(56,'132214','RESET_PASSWORD','2021-05-13 18:04:28','2021-05-13 19:04:28','I',1),(57,'118651','RESET_PASSWORD','2021-05-13 18:28:07','2021-05-13 19:28:07','I',1),(58,'149755','RESET_PASSWORD','2021-05-13 18:37:27','2021-05-13 19:37:27','I',1),(59,'157710','RESET_PASSWORD','2021-05-13 18:41:53','2021-05-13 19:41:53','I',1),(60,'173770','RESET_PASSWORD','2021-05-14 11:06:18','2021-05-14 12:06:18','I',1),(61,'123382','RESET_PASSWORD','2021-05-14 11:09:11','2021-05-14 12:09:11','I',1),(62,'173799','RESET_PASSWORD','2021-05-14 11:14:23','2021-05-14 12:14:23','I',1),(63,'154266','RESET_PASSWORD','2021-05-14 12:15:38','2021-05-14 13:15:38','I',1),(64,'189313','RESET_PASSWORD','2021-05-14 12:21:37','2021-05-14 13:21:37','I',1),(65,'156678','RESET_PASSWORD','2021-05-14 12:26:46','2021-05-14 13:26:46','I',1),(66,'134522','RESET_PASSWORD','2021-05-14 13:43:48','2021-05-14 14:43:48','I',1),(67,'136195','RESET_PASSWORD','2021-05-14 13:54:22','2021-05-14 14:54:22','I',1),(68,'145147','RESET_PASSWORD','2021-05-14 13:59:10','2021-05-14 14:59:10','I',1),(69,'198003','RESET_PASSWORD','2021-05-14 20:10:30','2021-05-14 21:10:30','I',1),(70,'107351','RESET_PASSWORD','2021-05-14 20:14:48','2021-05-14 21:14:48','I',1),(71,'191026','RESET_PASSWORD','2021-05-14 20:43:15','2021-05-14 21:43:15','I',1),(72,'162342','RESET_PASSWORD','2021-05-14 22:04:36','2021-05-14 23:04:36','I',1),(73,'184459','RESET_PASSWORD','2021-05-14 22:07:56','2021-05-14 23:07:56','I',1),(74,'129705','RESET_PASSWORD','2021-05-17 10:37:26','2021-05-17 11:37:26','I',1),(75,'194067','RESET_PASSWORD','2021-05-17 14:22:06','2021-05-17 15:22:06','I',1),(76,'145410','RESET_PASSWORD','2021-05-17 14:51:10','2021-05-17 15:51:10','I',1),(77,'147494','RESET_PASSWORD','2021-05-17 15:10:31','2021-05-17 16:10:31','I',1),(78,'186696','RESET_PASSWORD','2021-05-17 15:30:25','2021-05-17 16:30:25','I',1),(79,'170528','RESET_PASSWORD','2021-05-17 16:09:02','2021-05-17 17:09:02','I',1),(80,'155301','RESET_PASSWORD','2021-05-17 17:56:40','2021-05-17 18:56:40','I',1),(81,'182734','RESET_PASSWORD','2021-05-17 19:10:12','2021-05-17 20:10:12','I',1),(82,'132820','RESET_PASSWORD','2021-05-17 19:19:25','2021-05-17 20:19:25','I',1),(83,'120275','RESET_PASSWORD','2021-05-18 12:54:48','2021-05-18 13:54:48','I',1),(84,'151279','RESET_PASSWORD','2021-05-18 13:05:02','2021-05-18 14:05:02','I',1),(85,'145262','RESET_PASSWORD','2021-05-18 13:27:21','2021-05-18 14:27:21','I',1),(86,'175495','RESET_PASSWORD','2021-05-18 13:46:11','2021-05-18 14:46:11','I',1),(87,'159062','RESET_PASSWORD','2021-05-18 14:00:37','2021-05-18 15:00:37','I',1),(88,'123698','RESET_PASSWORD','2021-05-18 16:37:31','2021-05-18 17:37:31','I',1),(89,'103597','RESET_PASSWORD','2021-05-18 16:45:07','2021-05-18 17:45:07','I',1),(90,'150254','RESET_PASSWORD','2021-05-18 16:56:54','2021-05-18 17:56:54','I',1),(91,'112701','RESET_PASSWORD','2021-05-18 17:10:03','2021-05-18 18:10:03','I',1),(92,'157334','RESET_PASSWORD','2021-05-19 11:45:43','2021-05-19 12:45:43','I',1),(93,'191612','RESET_PASSWORD','2021-05-19 11:49:28','2021-05-19 12:49:28','I',1),(94,'138093','RESET_PASSWORD','2021-05-19 11:52:39','2021-05-19 12:52:39','I',1),(95,'176670','RESET_PASSWORD','2021-05-19 12:15:30','2021-05-19 13:15:30','I',1),(96,'158722','RESET_PASSWORD','2021-05-19 12:25:24','2021-05-19 13:25:24','I',1),(97,'188504','RESET_PASSWORD','2021-05-19 12:40:05','2021-05-19 13:40:05','I',1),(98,'170942','RESET_PASSWORD','2021-05-19 14:36:20','2021-05-19 15:36:20','I',1),(99,'124176','RESET_PASSWORD','2021-05-19 14:40:38','2021-05-19 15:40:38','I',1),(100,'108797','RESET_PASSWORD','2021-05-19 15:02:48','2021-05-19 16:02:48','I',1),(101,'135501','RESET_PASSWORD','2021-05-20 10:17:56','2021-05-20 11:17:56','I',1),(102,'131411','RESET_PASSWORD','2021-05-20 12:43:42','2021-05-20 13:43:42','I',1),(103,'118643','RESET_PASSWORD','2021-05-20 12:47:31','2021-05-20 13:47:31','I',1),(104,'144266','RESET_PASSWORD','2021-05-20 12:58:18','2021-05-20 13:58:18','I',1),(105,'108478','RESET_PASSWORD','2021-05-21 12:37:58','2021-05-21 13:37:58','I',1),(106,'174953','RESET_PASSWORD','2021-05-21 13:07:27','2021-05-21 14:07:27','I',1),(107,'111731','RESET_PASSWORD','2021-05-21 13:18:40','2021-05-21 14:18:40','I',1),(108,'133705','RESET_PASSWORD','2021-05-21 13:32:45','2021-05-21 14:32:45','I',1),(109,'129602','RESET_PASSWORD','2021-05-21 16:56:34','2021-05-21 17:56:34','I',1),(110,'178514','RESET_PASSWORD','2021-05-21 16:59:10','2021-05-21 17:59:10','I',1),(111,'168670','RESET_PASSWORD','2021-05-21 17:04:39','2021-05-21 18:04:39','I',1),(112,'165369','RESET_PASSWORD','2021-05-21 18:12:50','2021-05-21 19:12:50','I',1),(113,'125435','RESET_PASSWORD','2021-05-21 18:31:10','2021-05-21 19:31:10','I',1),(114,'154268','RESET_PASSWORD','2021-05-21 19:20:11','2021-05-21 20:20:11','I',1),(115,'121001','RESET_PASSWORD','2021-05-21 19:35:50','2021-05-21 20:35:50','I',1),(117,'189035','RESET_PASSWORD','2021-05-25 22:33:39','2021-05-25 23:33:39','I',1),(118,'111447','RESET_PASSWORD','2021-05-25 22:36:57','2021-05-25 23:36:57','I',1),(119,'122727','RESET_PASSWORD','2021-05-25 22:42:56','2021-05-25 23:42:56','I',1),(120,'192549','RESET_PASSWORD','2021-05-28 09:44:25','2021-05-28 10:44:25','I',1),(121,'130958','RESET_PASSWORD','2021-05-28 09:53:34','2021-05-28 10:53:34','I',1),(122,'195974','RESET_PASSWORD','2021-05-28 09:56:57','2021-05-28 10:56:57','I',1),(123,'159973','RESET_PASSWORD','2021-05-28 10:23:08','2021-05-28 11:23:08','I',1);
+/*!40000 ALTER TABLE `token` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `transaction_details`
+--
+
+LOCK TABLES `transaction_details` WRITE;
+/*!40000 ALTER TABLE `transaction_details` DISABLE KEYS */;
+/*!40000 ALTER TABLE `transaction_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `transaction_master`
+--
+
+LOCK TABLES `transaction_master` WRITE;
+/*!40000 ALTER TABLE `transaction_master` DISABLE KEYS */;
+/*!40000 ALTER TABLE `transaction_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'algorial pos','testalgorial@gmail.com','$2a$10$64Gcz1s0lB8cJbgo0otxpeieVlJPcjsIv6pNonsF1Xw.Qok9SndRi','testalgorial@gmail.com',1,776455624,NULL,1,'2021-04-09 00:00:00',NULL,NULL,NULL,1,1,NULL,1),(2,'Sellathurrai Saseekalaraj','saseekalaraj@codelantic.com','$2a$10$vsqduq3UxfKg2.kS8lCu0uimzb.H2ewdJlYNAcgHh8JRX0Q5SYUDq','saseekalaraj@codelantic.com',1,776455624,NULL,1,'2021-04-09 00:00:00',NULL,NULL,NULL,1,1,NULL,NULL),(3,'fghj fgvhbjn','saseekalaraj@scodelantic.com','$2a$10$KQpomFmCZxJ5IVeKxpZBnO4O.nFN4IyLn16bHm2GpJZFdkX77.4IO','saseekalaraj@scodelantic.com',1,45678,NULL,1,'2021-04-27 00:00:00',NULL,NULL,NULL,1,1,NULL,NULL),(4,'sdfg sdfgh','algoridsdsdaldev@gmail.com','$2a$10$MCU7fCPOzMUQ7HYGWnuOneOX1t2KjGLM61goqJ/RZl4q00DV.nXM2','algoridsdsdaldev@gmail.com',1,5454,NULL,1,'2021-05-06 00:00:00',NULL,NULL,NULL,1,1,NULL,NULL),(5,'sdfg sdfgh','algoridsdsdaldev@gmail.com','$2a$10$oLOPYt34YRJwentUv19b7.HZjRO5vEHSe5oN6MAQrrowTfLimamgG','algoridsdsdaldev@gmail.com',1,5454,NULL,1,'2021-05-06 00:00:00',NULL,NULL,NULL,1,1,NULL,NULL);
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user_login_details`
+--
+
+LOCK TABLES `user_login_details` WRITE;
+/*!40000 ALTER TABLE `user_login_details` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_login_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user_privilege`
+--
+
+LOCK TABLES `user_privilege` WRITE;
+/*!40000 ALTER TABLE `user_privilege` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_privilege` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user_role`
+--
+
+LOCK TABLES `user_role` WRITE;
+/*!40000 ALTER TABLE `user_role` DISABLE KEYS */;
+INSERT INTO `user_role` VALUES (1,1,'Core Admin',1,1),(2,1,'test role',1,1);
+/*!40000 ALTER TABLE `user_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `user_type`
+--
+
+LOCK TABLES `user_type` WRITE;
+/*!40000 ALTER TABLE `user_type` DISABLE KEYS */;
+INSERT INTO `user_type` VALUES (1,'Core Admin','Core Admin',1);
+/*!40000 ALTER TABLE `user_type` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-05-31 18:33:38
